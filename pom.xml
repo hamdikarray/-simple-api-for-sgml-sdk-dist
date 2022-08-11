@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.hamdikarray</groupId>
+	<artifactId>simple-api-for-sgml-sdk-dist</artifactId>
+	<version>1.00.00</version>
+	<name>Simple Api for Sgml SDK</name>
+  <description>Simple Api for Sgml SDK</description>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
+		<cp-protocol-dist.version>1.00.00</cp-protocol-dist.version>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>Hamdi KARRAY</name>
+			<email>hamdikarray@hotmail.com</email>
+			<roles>
+				<role>creator</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:https://github.com/hamdikarray/simple-api-for-sgml-sdk-dist.git</connection>
+		<developerConnection>scm:git:https://github.com/hamdikarray/simple-api-for-sgml-sdk-dist.git</developerConnection>
+		<url>scm:git:https://github.com/hamdikarray/simple-api-for-sgml-sdk-dist.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.github.hamdikarray</groupId>
+		  <artifactId>cp-protocol-dist</artifactId>
+		  <version>${cp-protocol-dist.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub hamdikarray Apache Maven Packages</name>
+		  <url>https://maven.pkg.github.com/hamdikarray/simple-api-for-sgml-sdk-dist</url>
+		</repository>
+	</distributionManagement>
+
+</project>
